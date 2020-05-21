@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Transformaciones 2D</title>
+    <style type="text/css">
+        .principal {
+            font-size: 20px;
+            padding: 0 30%;
+        }
+        
+        input[type=text] {
+            background-color: rgb(255, 244, 96);
+        }
+        
+        input[type=button] {
+            background-color: rgb(61, 61, 255);
+            color: #fff;
+            width: 100px;
+            height: 30px;
+        }
+        
+        input[type=color] {
+            width: 130px;
+        }
+    </style>
+</head>
+
+<body class="principal">
+
+    <!-- Archivo con la rutina para pintar las l�neas utilizando javascript -->
+    <script src="transformaciones.js"></script>
+    <table>
+        <tr>
+
+            <td>Color de la Figura </td>
+            <td><input id="color" type="color" onchange="cambiarColor()" /></td>
+            <!-- Indicar el color de pintado -->
+            <!-- Bot�n para llamar a la funci�n que muestra el punto -->
+            <td><input type="button" value="Reiniciar" onclick="reiniciar()" /></td>
+        </tr>
+        <tr>
+            <td>Factor de Desplazamiento: </td>
+            <td>dx<input id="dx" type="text" size="2" />
+                <!-- Campo texto para  -->
+                dy<input id="dy" type="text" size="2" /></td>
+            <!-- Campo texto para  -->
+
+            <!-- Bot�n para llamar a la funci�n que muestra el punto -->
+            <td><input type="button" value="Trasladar" onclick="trasladar()" /></td>
+        </tr>
+
+        <tr>
+            <td>Factor de Escalamiento:</td>
+            <td>sx<input id="sx" type="text" size="2" />
+                <!-- Campo texto para  -->
+                sy<input id="sy" type="text" size="2" /></td>
+            <!-- Campo texto para  -->
+
+            <!-- Bot�n para llamar a la funci�n que muestra el punto -->
+            <td><input type="button" value="Escalar" onclick="escalar()" /></td>
+        </tr>
+
+        <tr>
+            <td>Angulo de Rotacion:</td>
+            <td>
+                < <input id="angulo" type="text" size="2" /></td>
+            <!-- Campo texto para  indicar el �ngulo de rotaci�n-->
+
+            <!-- Bot�n para llamar a la funci�n que muestra el punto -->
+            <td><input type="button" value="Rotar" onclick="rotar()" /></td>
+        </tr>
+    </table>
+
+    <!-- Lienzo para pintar las l�neas -->
+    <canvas style="background-color:#e9e9e9;" id="lienzo" width="500" height="500" onmousedown="dibujar(event)"> 
+    </canvas>
+    <!-- La funci�n dibujar se ejecuta cada que se hace clic sobre el lienzo -->
+</body>
+
+</html>

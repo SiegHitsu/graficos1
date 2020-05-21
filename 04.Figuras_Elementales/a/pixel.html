@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Pixel en la posición 120, 100</title>
+  </head>
+
+  <!-- Al cargar la página se llamara a la rutina para pintar -->
+  <!-- <body onload="dibujar()"> -->
+
+  <body>
+
+    <!-- Archivo pixel.js con la rutina para pintar el pixel utilizando javascript -->
+    <script src="pixel.js"></script>
+
+    <form id="f">
+	color<input name="c" type="color" onchange="dibujar()"/>
+    </form>
+
+    <canvas id="lienzo" width="400" height="400" style="background-color:#A2A2A2;" > <!-- Lienzo para pintar el punto -->
+    </canvas>
+
+  </body>
+
+</html>

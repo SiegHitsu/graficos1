@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Copiar Imagen</title>
+    <link rel="stylesheet" href="cpy_imagen.css">
+</head>
+
+<body>
+    <div style="background-color: rgb(13, 26, 207); padding: 10px; display: flex; ">
+        <div class="gen">
+            <input type='file' id='cargar' style="background-color:white;">
+        </div>
+        <div class="gen">
+            <input type="button" value="Copiar" onclick="copiar()" />
+        </div>
+        <div class="gen">
+            <input type="button" value="Negativo" onclick="negativo()" />
+        </div>
+        <div class=" gen">
+            <label>Brillo</label><br>
+            <input type="range" value="0" max="127" min="-127" id="umbral">
+        </div>
+
+        <div class="gen">
+            <label>Descomposicion de Canales</label><br>
+            <input type="button" value="Rojo" onclick="rojo()" style="background-color: red;" />
+            <input type="button" value="Verde" onclick="verde()" style="background-color: green;" />
+            <input type="button" value="Azul" onclick="azul()" style="background-color: blue;" />
+        </div>
+        <div class="gen">
+            <label>Escala de Grises</label><br>
+            <input type="button" value="Escalar" onclick="escalag()" />
+        </div>
+        <div class="gen">
+            <label>Blanco y Negro</label><br>
+            <input type="range" value="127" max="255" min="0" id="umbralbyn">
+        </div>
+    </div>
+    <div style="background-color: rgb(13, 26, 207); padding: 10px; display: flex; ">
+        <div class="gen">
+            <label>Intercambio de Canales</label><br>
+            <input type="button" value="G-->B" onclick="intercambio()" />
+        </div>
+        <div class="gen">
+            <label>Transparencia</label><br>
+            <input type="range" value="127" max="255" min="0" id="umbralt">
+        </div>
+        <div class="gen">
+            <label>Escala de Grises Formula Secreta</label><br>
+            <input type="button" value="Escalar" onclick="secreta()" />
+        </div>
+        <div class="gen">
+            <input type="button" value="Serpia" onclick="serpia()" />
+        </div>
+        <div class="gen">
+            <input type="button" value="Ruido" onclick="ruido()" />
+        </div>
+    </div>
+    <br><br>
+    <canvas id='canvas'></canvas>
+    <canvas id='canvas2'></canvas>
+    <script src="cpy_imagen.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+h1 {
+    text-align: center;
+    padding: 3%;
+}
+
+body {
+    background-image: url('https://img.pixers.pics/pho_wat(s3:700/FO/40/30/31/92/700_FO40303192_95391f292d574da16f26894d794ee30b.jpg,700,588,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,538,jpg)/cortinas-de-ducha-conjunto-de-fondos-3d-cubos-blancos.jpg.jpg');
+    background-size: 100% 110%;
+    color: black;
+}
+
+.lateral {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 5px solid rgba(250, 248, 248, .13);
+    float: left;
+    width: 230px;
+    height: 100%;
+    padding: 10px;
+}
+
+.lateral>img {
+    padding: 10% 15%;
+}
+
+.menu {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 5px solid rgba(0, 0, 0, 0.13);
+    float: left;
+    width: 600px;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.principal {
+    background-color: blue;
+    width: 900px;
+    align-items: center;
+    padding: 0 15%;
+    /*display: flex;*/
+}
+
+.trabajos {
+    text-align: left;
+    padding: 2% 25%;
+}
+
+.interior {
+    display: none;
+}
+
+input:checked~ul {
+    display: block;
+}
+
+#menu * {
+    list-style: none;
+}
+
+#menu li {
+    line-height: 180%;
+}
+
+#menu li a {
+    /*color: rgb(0, 0, 0);*/
+    text-decoration: none;
+}
+
+#menu li a:before {
+    content: "\025b8";
+    color: rgb(0, 0, 0);
+    margin-right: 4px;
+}
+
+#menu input[name="list"] {
+    position: absolute;
+    left: -1000em;
+}
+
+#menu label:before {
+    content: "\025b8";
+    margin-right: 4px;
+}
+
+#menu input:checked~label:before {
+    content: "\025be";
+}
+
+#menu .interior {
+    display: none;
+}
+
+#menu input:checked~ul {
+    display: block;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Copiar Imagen</title>
+    <link rel="stylesheet" href="cpy_imagen.css">
+</head>
+
+<body>
+    <div style="background-color: rgb(13, 26, 207); padding: 10px; display: flex; ">
+        <h3>Escala de Grises</h3><br>
+        <div class="gen">
+            <input type='file' id='cargar'>
+        </div>
+        <div class="gen">
+            <input type="button" value="Promedio" onclick="promedio()" />
+        </div>
+        <div class="gen">
+            <input type="button" value="Correccion" onclick="correccion()" />
+        </div>
+        <div class="gen">
+            <input type="button" value="Desaturacion" onclick="desa()" />
+        </div>
+        <div class="gen">
+            <label>Descomposicion</label><br>
+            <label>Maxima </label><input type="button" value="Descomponer" onclick="descmax()" /><br>
+            <label>Minima </label><input type="button" value="Descomponer" onclick="descmin()" />
+        </div>
+        <div class="gen">
+            <label>Canal de Color Individual</label><br>
+            <input type="button" value="Rojo" onclick="rojo()" />
+            <input type="button" value="Verde" onclick="verde()" />
+            <input type="button" value="Azul" onclick="azul()" />
+        </div>
+    </div><br><br>
+    <canvas id='canvas'></canvas>
+    <canvas id='canvas2'></canvas><br>
+    <script src="cpy_imagen.js"></script>
+</body>
+
+</html>

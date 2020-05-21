@@ -1,0 +1,12 @@
+canvas {
+    border-style: solid;
+}
+
+.gen {
+    float: left;
+    background-color: rgb(54, 160, 230);
+    border: 5px solid rgba(7, 7, 7, 0.144);
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
